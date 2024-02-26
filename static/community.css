@@ -1,45 +1,9 @@
+*{
+    overflow-x: hidden !important;
+}
 body {
     color: white;
     margin: 0;
     padding: 0;
-}
-
-.post-container {
-    max-width: 600px;
-    margin: 20px auto;
-    border: 1px solid #ccc;
-    padding: 10px;
-    background-color: rgb(22, 31, 46);
-}
-
-.user-post img {
-    max-width: 100%;
-    height: auto;
-}
-
-.post-text {
-    margin-top: 10px;
-}
-
-.comments-section {
-    margin-top: 20px;
-}
-
-#comments-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.comment {
-    border-bottom: 1px solid #ccc;
-    padding: 8px;
-}
-
-textarea {
-    width: 100%;
-    margin-top: 10px;
-}
-
-button {
-    margin-top: 10px;
+    
 }

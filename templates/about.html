@@ -1,44 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Chitorium</title>
+    <title>Chitorium</title>
     <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/about.css">
+    <script>
+        const apitoken = "{{ api_token }}";
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+    <script defer src="/Type-effect.js"></script>
 </head>
+
 <body>
-    <header>
-        <h1>Chitorium <img src="/static/chitorium.png" alt="logo" id="logo"></h1>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/community">Community</a>
-            <a href="/about">About</a>
-        </nav>
-    </header>
-    <div style="background-color: rgb(22, 31, 46); width: 50%; margin-left: 25%; margin-top: 20px; color: white; padding: 20px; border-radius: 25px;">
-    <section class="about-section">
-        <h2>About Chitorium</h2>
-        <p>Welcome to Chitorium, your ultimate destination for analyzing gaming communities and identifying potential cheaters. Our platform leverages the power of Leetify.com to create insightful charts that reveal the likelihood of cheating among players.</p>
-        <p>At Chitorium, we understand the importance of fair play in gaming. Our mission is to provide players with a tool that helps maintain the integrity of online gaming environments. Whether you're a casual gamer or a competitive player, Chitorium is here to support your gaming experience.</p>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid ">
+            <a class="navbar-brand">Chitorium<span class="dot">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="/templates/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/templates/community.html">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/templates/about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="about-us">
+        <div class="about">
+            <img src="/static/chitorium.png" class="pic">
+            <div class="text">
+                <h2 class="about-text">About Chitorium</h2>
+                
+                <p>Welcome to Chitorium, your ultimate destination for analyzing gaming communities and identifying potential cheaters. Our
+                platform leverages the power of Leetify.com to create insightful charts that reveal the likelihood of cheating among
+                players.</p>
+                <p>At Chitorium, we understand the importance of fair play in gaming. Our mission is to provide players with a tool that
+                    helps maintain the integrity of online gaming environments. Whether you're a casual gamer or a competitive player,
+                    Chitorium is here to support your gaming experience.</p>
+                <div class="data">
+                  
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="how-it-works-section">
-        <h2>How Chitorium Works</h2>
-        <p>Chitorium uses Leetify.com player links to generate comprehensive charts showcasing your gaming connections and the likelihood of encountering cheaters. By analyzing the data from your gameplay history, Chitorium provides valuable insights to help you make informed decisions about who you play with.</p>
-    </section>
-    <section class="features-section">
-        <h2>Key Features</h2>
-        <ul>
-            <li>Seamless Integration with Leetify.com</li>
-            <li>Visual Charts for Easy Analysis</li>
-            <li>Accurate Cheating Probability Metrics</li>
-            <li>Community and User Profiles</li>
-            <li>Enhanced Gaming Experience</li>
-        </ul>
-    </section>
-    <section class="join-community-section">
+
+
+    <div class="accordion">
+        <h1>Frequently Asked Questions</h1>
+        <div class="accordion-item">
+            <input type="checkbox" id="accordion1">
+            <label for="accordion1" class="accordion-item-title"><span class="icon"></span>How Chitorium Works?</label>
+            <div class="accordion-item-desc">Chitorium uses Leetify.com player links to generate comprehensive charts showcasing your gaming connections and the
+            likelihood of encountering cheaters. By analyzing the data from your gameplay history, Chitorium provides valuable
+            insights to help you make informed decisions about who you play with.</div>
+        </div>
+    
+        <div class="accordion-item">
+            <input type="checkbox" id="accordion2">
+            <label for="accordion2" class="accordion-item-title"><span class="icon"></span>Key Features</label>
+            <div class="accordion-item-desc">
+                <ul>
+                    <li>Seamless Integration with Leetify.com</li>
+                    <li>Visual Charts for Easy Analysis</li>
+                    <li>Accurate Cheating Probability Metrics</li>
+                    <li>Community and User Profiles</li>
+                    <li>Enhanced Gaming Experience</li>
+                </ul>
+            </div>
+        </div>
+    
+        
+    
+    </div>
+
+    <div class="join">
         <h2>Join the Chitorium Community</h2>
-        <p>Become part of our growing community dedicated to promoting fair play and a positive gaming atmosphere. Connect with like-minded players, share your experiences, and stay updated on the latest trends in the gaming world.</p>
-    </section>
-</div>
+        <p class="join-comm">Become part of our growing community dedicated to promoting fair play and a positive gaming atmosphere. Connect with
+            like-minded players, share your experiences, and stay updated on the latest trends in the gaming world.</p>
+    </div>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <span class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio veritatis
+                        cumque molestias, corrupti blanditiis quisquam cum officia quibusdam fugiat facilis vero a
+                        praesentium deserunt id itaque eaque eius laudantium laborum nulla fugit reiciendis. Iste odio
+                        id deleniti, reiciendis alias earum?</span>
+                </div>
+
+                <!-- <div class="col-xs-6 col-md-3">
+        <h6>Lorem, ipsum.</h6>
+        <ul class="footer-links">
+          <li><a href="">Lorem, ipsum.</a></li>
+          <li><a href="">Lorem, ipsum. </a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+        </ul>
+      </div> -->
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="/templates/index.html">Home </a></li>
+                        <li><a href="/templates/about.html">Contact </a></li>
+                        <li><a href="/templates/about.html">About </a></li>
+                        <li><a href="/templates/community.html">Community </a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2024 All Rights Reserved by
+                        <a href="https://Chitorium.com">Chitorium.com</a>.
+                    </p>
+                </div>
+
+
+            </div>
+    </footer>
 </body>
+
 </html>
+<!-- <div style="background-color: rgb(22, 31, 46); width: 50%; margin-left: 25%; margin-top: 20px; color: white; padding: 20px; border-radius: 25px;">
+<section class="about-section">
+    <h2>About Chitorium</h2>
+    <p>Welcome to Chitorium, your ultimate destination for analyzing gaming communities and identifying potential cheaters. Our platform leverages the power of Leetify.com to create insightful charts that reveal the likelihood of cheating among players.</p>
+    <p>At Chitorium, we understand the importance of fair play in gaming. Our mission is to provide players with a tool that helps maintain the integrity of online gaming environments. Whether you're a casual gamer or a competitive player, Chitorium is here to support your gaming experience.</p>
+</section>
+<section class="how-it-works-section">
+    <h2>How Chitorium Works</h2>
+    <p>Chitorium uses Leetify.com player links to generate comprehensive charts showcasing your gaming connections and the likelihood of encountering cheaters. By analyzing the data from your gameplay history, Chitorium provides valuable insights to help you make informed decisions about who you play with.</p>
+</section>
+<section class="features-section">
+    <h2>Key Features</h2>
+    <ul>
+        <li>Seamless Integration with Leetify.com</li>
+        <li>Visual Charts for Easy Analysis</li>
+        <li>Accurate Cheating Probability Metrics</li>
+        <li>Community and User Profiles</li>
+        <li>Enhanced Gaming Experience</li>
+    </ul>
+</section>
+<section class="join-community-section">
+    <h2>Join the Chitorium Community</h2>
+    <p>Become part of our growing community dedicated to promoting fair play and a positive gaming atmosphere. Connect with like-minded players, share your experiences, and stay updated on the latest trends in the gaming world.</p>
+</section> -->

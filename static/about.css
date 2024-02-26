@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-us {
+    /* height: 100vh; */
+    width: 100%;
+    padding: 90px 0;
+}
+
+.pic {
+    height: auto;
+    width: 302px;
+}
+
+.about {
+    width: 1130px;
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text {
+    width: 540px;
+}
+
+.text h2 {
+    font-size: 90px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.text h5 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+span {
+    color: #4070f4;
+}
+
+.text p {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.data {
+    margin-top: 30px;
+}
+
+.hire {
+    font-size: 18px;
+    background: #4070f4;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.hire:hover {
+    background: #000;
+    border: 1px solid #4070f4;
+}
+.about-text{
+    font-size: 4em !important;
+    font-weight:500 !important;
+    margin-bottom: 1em !important;
+    width: 100% !important;
+
+}
+p{
+    padding-bottom: 2em !important;
+}
+.about-us{
+    padding-bottom: 90px !important;
+}
+
+.join {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.join h2 {
+    margin-bottom: 20px;
+    
+}
+
+.join-comm {
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+
+/* faqV */
+
+
+
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    font-family: "Sora", sans-serif;
+    max-width: 991px;
+    min-width: 320px;
+    margin: 50px auto;
+    padding: 0 50px;
+}
+
+.accordion h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.accordion-item {
+    margin-top: 16px;
+    border: 1px solid #fcfcfc;
+    border-radius: 6px;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+.accordion-item .accordion-item-title {
+    position: relative;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    font-size: 15px;
+    cursor: pointer;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.accordion-item .accordion-item-desc {
+    display: none;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #444;
+    border-top: 1px dashed #ddd;
+    padding: 10px 20px 20px;
+    box-sizing: border-box;
+}
+
+.accordion-item input[type="checkbox"] {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.accordion-item input[type="checkbox"]:checked~.accordion-item-desc {
+    display: block;
+}
+
+.accordion-item input[type="checkbox"]:checked~.accordion-item-title .icon:after {
+    content: "-";
+    font-size: 20px;
+}
+
+.accordion-item input[type="checkbox"]~.accordion-item-title .icon:after {
+    content: "+";
+    font-size: 20px;
+}
+
+.accordion-item:first-child {
+    margin-top: 0;
+}
+
+.accordion-item .icon {
+    margin-left: 14px;
+}
+
+@media screen and (max-width: 767px) {
+    .accordion {
+        padding: 0 16px;
+    }
+
+    .accordion h1 {
+        font-size: 22px;
+    }
+}
