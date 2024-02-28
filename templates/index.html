@@ -16,7 +16,7 @@
     crossorigin="anonymous"></script>
     <script defer src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 
-    <script defer src="/Type-effect.js"></script>
+    <script defer src="/static/Type-effect.js"></script>
 </head>
 
 <body>
@@ -44,8 +44,8 @@
       </div>
     </div>
   </nav>
-
-  <div class="content-container">
+ <!-- this is the search for a player form , just add the login js thing and uncomment this  -->
+  <!-- <form class="content-container">
     <div class="form-container">
       <p class="form-t" id="text-effect"></p>
       <p class="form-t" id="text-effect2"></p>
@@ -64,9 +64,79 @@
 
         <button type="submit" class="custom-submit-btn">Search..</button>
         <button type="button" id="backtohome" onclick="location.reload()" hidden="true">Back to home.</button>
+      </form> -->
+      
+       <div class="content-container">
+        <form class="form-container login-form">
+          <p class="form-t" id="text-effect"></p>
+          <p class="form-t" id="text-effect2"></p>
+          <div class="form-control custom-form">
+            <div class="input-container">
+              <label for="link" class="custom-label">Username</label>
+              <input type="text" id="loginUsername" name="loginUsername" class="custom-input" required
+                placeholder="JohnDoe">
+              <br>
+              <br>
+            </div>
+            <div class="input-container">
+              <label  class="custom-label">Password</label>
+              <input type="password" id="loginPassword" class="custom-input" required>
+            </div>
+      
+            <div class="button-container">
+              <button type="submit" class="custom-submit-btn">Login</button>
+              <button type="submit" class="custom-submit-btn">Signup</button>
+            </div>
+            <button type="button" id="backtohome" onclick="location.reload()" hidden="true">Back to home.</button>
+          </div>
+    
+
+          
+    <!-- <div id="popupForm" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);"
+      class="login-form">
+      <form id="loginForm">
+        <div class="input-container">
+          <label for="loginUsername">Username:</label>
+          <br>
+          <input type="text" id="loginUsername" name="loginUsername" placeholder="Enter your username..." required>
+        </div>
+        <div class="input-container">
+          <label for="loginPassword">Password:</label>
+          <br>
+          <input type="password" id="loginPassword" name="loginPassword" placeholder="Enter your password..." required>
+        </div>
+        <button type="submit" id="loginbutton">Login</button>
+        <button type="button" id="ToggleButton"></button>
       </form>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <br><br><br><br><br><br>
-    </div>
+    </form>
     <img src="https://opendoodles.s3-us-west-1.amazonaws.com/loving.svg" width="500em" class="svgg" alt="">
   </div>
 <div class="txt">
@@ -86,17 +156,6 @@
         <span class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio veritatis cumque molestias, corrupti blanditiis quisquam cum officia quibusdam fugiat facilis vero a praesentium deserunt id itaque eaque eius laudantium laborum nulla fugit reiciendis. Iste odio id deleniti, reiciendis alias earum?</span>
       </div>
 
-      <!-- <div class="col-xs-6 col-md-3">
-        <h6>Lorem, ipsum.</h6>
-        <ul class="footer-links">
-          <li><a href="">Lorem, ipsum.</a></li>
-          <li><a href="">Lorem, ipsum. </a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
-      </div> -->
 
       <div class="col-xs-6 col-md-3">
         <h6>Quick Links</h6>

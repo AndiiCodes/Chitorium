@@ -12,6 +12,8 @@ body {
     line-height: 0%;
 }
 
+
+
 .container-fluid {
     background-color: rgb(255, 255, 255);
 }
@@ -67,11 +69,15 @@ p{
 .custom-input:focus {
     border: 1.5px solid #2d79f3;
 }
-
+.button-container {
+    display: flex;
+    justify-content:center;
+}
 .custom-submit-btn {
     margin-top: 30px;
     height: 55px;
-    width: 100%;
+    width: 50%;
+    margin: 10px;
     background: #f2f2f2;
     border-radius: 11px;
     border: 0;
@@ -83,6 +89,18 @@ p{
     box-shadow: 0px 0px 0px 0px #ffffff, 0px 0px 0px 0px #000000;
     transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
     cursor: pointer;
+}
+.text-effect-container {
+    float: right;
+}
+
+.right-container {
+    float: left;
+    max-width: 500px;
+}
+
+.txt {
+    width: 100%;
 }
 
 .custom-submit-btn:hover {
@@ -116,7 +134,7 @@ p{
     margin-left: auto;
     margin-right: 320px;
 }
-.footer {
+.site-footer {
     background-color: #06060624;
     width: 100% !important;
     color: #000000;

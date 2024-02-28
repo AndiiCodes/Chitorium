@@ -1,9 +1,35 @@
-*{
-    overflow-x: hidden !important;
-}
-body {
-    color: white;
-    margin: 0;
-    padding: 0;
-    
-}
+ /* body {
+     margin: 0;
+     padding: 0;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: flex-start;
+     background-color: #f0f0f0;
+ } */
+
+ .post-container {
+     margin: 10px;
+     overflow: hidden;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ .user-post {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .user-post img {
+     width: 30%;
+     height: auto;
+     display: block;
+     margin: 0 auto;
+     /* Center the image horizontally */
+ }
+
+ .user-post p {
+     text-align: center;
+     padding: 10px;
+ }
